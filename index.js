@@ -50,7 +50,6 @@ function generatePlaylist(guardians, songs) {
 const playlists = generatePlaylist(guardians, songs);
 
 // Display the playlists for each Guardian
-// Display the playlists for each Guardian
 const playlistsDiv = document.getElementById('playlists');
 Object.keys(playlists).forEach((guardian) => {
   const playlistContainer = document.createElement("div");
@@ -62,7 +61,7 @@ Object.keys(playlists).forEach((guardian) => {
 
   const playlistList = document.createElement("ul");
   playlists[guardian].forEach((song) => {
-    const listItem = document.createElement("li");
+    const listItem = document.createElement("ul");
     const songTitle = document.createElement("span");
     songTitle.textContent = song;
     songTitle.style.textDecoration = "underline";
